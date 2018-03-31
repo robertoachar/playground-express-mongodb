@@ -4,7 +4,10 @@
     "es6": true
   },
   "parserOptions": {
-    "ecmaVersion": 6
+    "ecmaVersion": 8
   },
-  "rules": {}
+  "rules": {
+    "no-console": "error",
+    "no-process-env": "error"
+  }
 }
