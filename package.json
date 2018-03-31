@@ -1,0 +1,32 @@
+{
+  "name": "playground-express-mongodb",
+  "version": "1.0.0",
+  "description": "A playground for Express and MongoDB.",
+  "author": "Roberto Achar <robertoachar@gmail.com>",
+  "homepage":
+    "https://github.com/robertoachar/playground-express-mongodb#readme",
+  "keywords": ["node"],
+  "main": "src/index.js",
+  "files": ["src"],
+  "scripts": {
+    "lint": "eslint src/**/*.js",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robertoachar/playground-express-mongodb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/robertoachar/playground-express-mongodb/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "4.19.1",
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-import": "2.10.0",
+    "eslint-plugin-prettier": "2.6.0",
+    "prettier": "1.11.1"
+  },
+  "license": "MIT"
+}
