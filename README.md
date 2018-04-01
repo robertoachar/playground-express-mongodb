@@ -27,6 +27,28 @@ $ npm install
 | Starting development mode | `npm start`    |
 | Linting code              | `npm run lint` |
 
+* Environment variables
+
+Create a `.env` file in the root directory.
+
+```yml
+NODE_ENV=development
+DATABASE=mongodb://localhost:27017/playground
+PORT=3000
+```
+
+# User Endpoint
+
+Endpoint for managing users.
+
+| Method | Endpoint   | Description               |
+| ------ | ---------- | ------------------------- |
+| GET    | /users     | Retrieves a list of users |
+| GET    | /users/:id | Retrieves a specific user |
+| POST   | /users     | Creates a new user        |
+| PUT    | /users/:id | Updates user              |
+| DELETE | /users/:id | Deletes user              |
+
 # Author
 
 [Roberto Achar](https://twitter.com/robertoachar)
