@@ -5,11 +5,17 @@ const winston = require('winston');
 module.exports.notFound = (req, res, next) => {
   winston.warn('Not found');
 
-  res.status(404).json({ message: 'Not found' });
+  const error = new Error('Not Found');
+  error.status = 404;
+
+  next(error);
 };
 
 module.exports.catchAll = (err, req, res, next) => {
-  winston.error(err.message);
+  const status = err.status || 500;
+  const message = err.message || 'Something broke!'
 
-  res.status(500).json({ message: err.message });
+  winston.error(message);
+
+  res.status(status).json({ error: { message } });
 };
